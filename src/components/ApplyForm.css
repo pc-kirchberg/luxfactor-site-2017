@@ -1,0 +1,9 @@
+.apply-form {
+    margin-top: 2em;
+}
+
+@media all and (min-width: 768px) {
+    .apply-form__frame {
+        width: 100%;
+    }
+}

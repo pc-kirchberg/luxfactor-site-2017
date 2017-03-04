@@ -1,0 +1,127 @@
+body {
+    background: url('img/MainBG_minres.png') fixed;
+    background-size: cover;
+}
+
+.masthead {
+    max-width: 75%;
+    margin: 4em auto 0 auto;
+    color: #FF5722;
+    font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+    .masthead {
+        font-size: 130%;
+    }
+}
+
+.notif-widget {
+    margin: 8em auto 8em auto;
+    padding: 2em;
+    min-width: 16em;
+    max-width: 32em;
+    min-height: 12em;
+    background-color: #fafafa;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.scroll-indicator {
+    position: absolute;
+    top: calc(100vh - 2em);
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.scroll-indicator img {
+    height: 1em;
+}
+
+.main-content {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+}
+
+.main-content__row {
+    padding: 4em 2em;
+    line-height: 130%;
+}
+
+@media all and (min-width: 768px) {
+    .main-content__row {
+        padding: 8em 8em;
+    }
+}
+
+.main-content__row--fill {
+    background-color: #E64A19;
+    color: #fafafa;
+}
+
+.main-content__row--transparent {
+    color: #fafafa;
+    font-size: 150%;
+}
+
+.main-content__row--altbg {
+    color: #fafafa;
+    background: url('img/AltBG_minres.png') fixed;
+    background-size: cover;
+}
+
+@media all and (min-width: 960px) {
+    .main-content__row--altbg {
+        background-image: url('img/AltBG_960.png');
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .main-content__row--altbg {
+        background-image: url('img/AltBG_1280.png');
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .main-content__row--altbg {
+        background-image: url('img/AltBG_maxres.png');
+    }
+}
+
+.main-content__row--altbg2 {
+    color: #fafafa;
+    background: url('img/Altbg2_minres.png') fixed 50%;
+    background-size: cover;
+}
+
+@media all and (min-width: 960px) {
+    .main-content__row--altbg2 {
+        background-image: url('img/Altbg2_960.png');
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .main-content__row--altbg2 {
+        background-image: url('img/Altbg2_1280.png');
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .main-content__row--altbg2 {
+        background-image: url('img/Altbg2_maxres.png');
+    }
+}
+
+.main-content__row--footer {
+    padding: 4em;
+    background-color: #607D8B;
+}
+
+.App {
+    text-align: center;
+}
