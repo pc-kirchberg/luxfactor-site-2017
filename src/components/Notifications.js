@@ -51,6 +51,7 @@ export default class Notifications extends Component {
             window.OneSignal.setSubscription(true);
             this.updateNotifState()
         });
+        window.ga('send', 'event', 'notifications', 'register');
     }
 
     unsub() {
@@ -58,6 +59,11 @@ export default class Notifications extends Component {
             window.OneSignal.setSubscription(false);
             this.updateNotifState()
         });
+        window.ga('send', 'event', 'notifications', 'unsub');
+    }
+
+    submitEmailForm() {
+        window.ga('send', 'event', 'notifications', 'sub-email');
     }
 
     render(props, state) {
@@ -121,6 +127,7 @@ export default class Notifications extends Component {
                 <form
                     action="//pupilscom-esl1.us13.list-manage.com/subscribe/post?u=b3b1779754e6fe6cec8eb4c40&amp;id=538869464c&SIGNUP=luxfactor"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    onSubmit={this.submitEmailForm.bind(this)}
                     target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
                         <h2>Subscribe to email notifications</h2>

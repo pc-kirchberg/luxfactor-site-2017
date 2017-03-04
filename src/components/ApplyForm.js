@@ -12,10 +12,15 @@ export default class ApplyForm extends Component {
         };
     }
 
+    openForm() {
+        window.ga('send', 'event', 'apply-form', 'open');
+        window.open(FORM_URL, '_blank');
+    }
+
     render(props, state) {
         return (
             <div class="apply-form">
-                <Button onClick={() => window.open(FORM_URL, '_blank')}>OPEN FORM</Button>
+                <Button onClick={this.openForm.bind(this)}>OPEN FORM</Button>
             </div>
         );
     }
